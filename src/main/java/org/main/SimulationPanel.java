@@ -137,7 +137,8 @@ public class SimulationPanel extends JPanel implements Runnable {
         if (entityRandomizer < 66) {
             entities.add(new Mite(x, y, this));
         } else if (entityRandomizer > 67 && entityRandomizer < 100) {
-            entities.add(new Food(x, y, this));
+            entities.add(new Food(x, y, this, 1));
+
         } else {
         }
     }
